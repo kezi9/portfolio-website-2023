@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lite": "lite-server",
-    "start": "npm run lite"
+    "dev": "lite-server",
+    "watch": "sass --watch src/scss:css",
+    "start": "concurrently \\"npm run watch\\" \\"npm run dev\\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.77.4"
   }
 }
