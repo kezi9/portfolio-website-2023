@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "lite-server",
     "watch": "sass --watch src/scss:css",
-    "start": "concurrently \\"npm run watch\\" \\"npm run dev\\""
-  },
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
